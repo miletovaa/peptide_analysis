@@ -1,11 +1,22 @@
-name: metabolomics_lab_env
+name: proteomics_analysis
 channels:
   - conda-forge
+  - bioconda
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - python=3.12
-  - pandas
-  - numpy
-  - matplotlib
-  - pyyaml
   - python-dotenv
+  - pyyaml
+  - python=3.12
   - pip
+  - matplotlib
+  - numpy
+  - pandas
+  - ipykernel
+  - plotly
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - openpyxl
+  - nbformat
+prefix: /opt/anaconda3/envs/proteomics_analysis

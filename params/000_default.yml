@@ -1,25 +1,22 @@
-# ==========================================================
-# Default experiment parameters
-# ==========================================================
-# This file defines baseline parameters used by scripts,
-# notebooks, or workflows (e.g., Snakemake, main.py, etc.).
-# 
-# Convention:
-#   - Use lowercase_with_underscores for keys
-#   - Keep comments short but clear
-# ==========================================================
+parameters:
+  id: 000
+  description: "Proteomics script parameters."
 
-# --- General settings ---
-experiment_name: "default_run"
-description: "Baseline configuration for development."
-
-# --- Data and file names ---
 data:
-  sample_file: "input.csv"  # example dataset (small and shareable)
+  # Input file name containing proteomics data
+  file_name_proteomics_input: "250930_PD_and_RBD_cohort_report.xlsx"
 
-# --- Logging & reporting ---
+preprocessing:
+  # Threshold for zero values (Default: 60%)
+  zero_threshold: 0.6
+
+run:
+  # Whether to save intermediate CSV checkpoints (Default: false)
+  save_intermediate: false
+  use_correction: true
+
 logging:
-  enabled: true # options: TRUE | FALSE
-  level: "INFO"                   # options: DEBUG | INFO | WARNING | ERROR
-
-# --- Your custom parameters ---
+  # To enable logging. Options: [true, false]. (Default: false)
+  enabled: true
+  # Options: ["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]. (Default: "INFO")
+  level: "INFO"
