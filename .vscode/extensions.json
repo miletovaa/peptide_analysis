@@ -1,0 +1,43 @@
+{
+  // Recommended extensions for this project.
+  // VS Code will suggest installing these when the workspace is opened.
+  "recommendations": [
+    // --- Core Python support ---
+    "ms-python.python", // Python language support
+    
+    // --- Jupyter support ---
+    "ms-toolsai.jupyter", // Jupyter notebooks integration
+    "ms-toolsai.jupyter-renderers", // Enhanced rendering for Jupyter notebooks
+
+    // --- Conda & environment management ---
+    // "ms-python.anaconda-extension-pack", // Optional: GUI for Conda/Anaconda envs
+    "DJSaunders1997.conda-wingman",
+    
+    // --- Dev Containers (optional) ---
+    // "ms-vscode-remote.remote-containers", // For Dev Containers (devcontainer.json)
+
+    // --- Linting, formatting & code style ---
+    "aaron-bond.better-comments", // Enhanced comment display
+    // ? "charliermarsh.ruff", // Fast Python linter & formatter
+    // ? "ms-python.black-formatter", // Black formatter for Python code
+    // ? "editorconfig.editorconfig", // Enforces consistent code style
+
+    // --- Git & collaboration ---
+    "eamodio.gitlens", // Advanced Git integration (history, blame, etc.)
+
+    // --- YAML, JSON, CSV editing ---
+    // "redhat.vscode-yaml", // YAML validation and schema support
+
+    // --- Markdown & docs ---
+    // "yzhang.markdown-all-in-one", // Live preview, TOC, auto-format for Markdown
+
+    // --- Notebooks / Quarto (optional) ---
+    // "quarto.quarto", // Support for Quarto documents and notebooks
+
+    // --- Others ---
+    "PKief.material-icon-theme", // File icons for better visual identification
+  ],
+  "unwantedRecommendations": [
+    // Add here any extensions that conflict with lab standards
+  ]
+}

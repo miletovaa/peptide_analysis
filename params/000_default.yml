@@ -1,0 +1,25 @@
+# ==========================================================
+# Default experiment parameters
+# ==========================================================
+# This file defines baseline parameters used by scripts,
+# notebooks, or workflows (e.g., Snakemake, main.py, etc.).
+# 
+# Convention:
+#   - Use lowercase_with_underscores for keys
+#   - Keep comments short but clear
+# ==========================================================
+
+# --- General settings ---
+experiment_name: "default_run"
+description: "Baseline configuration for development."
+
+# --- Data and file names ---
+data:
+  sample_file: "input.csv"  # example dataset (small and shareable)
+
+# --- Logging & reporting ---
+logging:
+  enabled: true # options: TRUE | FALSE
+  level: "INFO"                   # options: DEBUG | INFO | WARNING | ERROR
+
+# --- Your custom parameters ---

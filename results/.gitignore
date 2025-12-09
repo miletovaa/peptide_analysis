@@ -1,0 +1,7 @@
+# Ignore all files in this directory except .gitignore
+*
+!.gitignore
+
+# Example of a run directory. Can be deleted if not needed.
+!run_000_20251024100000
+!run_000_20251024100000/*

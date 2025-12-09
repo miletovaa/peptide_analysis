@@ -1,0 +1,44 @@
+{
+  // VS Code Dev Container configuration file
+  // This defines how VS Code should build and connect to a containerized environment
+  // for consistent development across systems.
+
+  "name": "Lab Dev Container", // visible name in VS Code
+
+  // The Dockerfile used to build the container
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".." // usually the root of the repository
+  },
+
+  // The folder inside the container that VS Code will open
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  // Features, environment variables, or mounts can be added later
+  "features": {
+    // e.g., "ghcr.io/devcontainers/features/python:1": {}
+  },
+
+  // Forwarded ports (optional)
+  "forwardPorts": [
+    // 8888, // for Jupyter
+    // 8000  // for Flask apps
+  ],
+
+  // VS Code settings inside the container (optional)
+  "settings": {
+    // "python.defaultInterpreterPath": "/usr/bin/python3"
+  },
+
+  // Extensions automatically installed inside the container
+  "extensions": [
+    // "ms-python.python",
+    // "ms-toolsai.jupyter"
+  ],
+
+  // Post-create or post-start commands (optional)
+  "postCreateCommand": "",
+
+  // Remote user (optional)
+  "remoteUser": "vscode"
+}
