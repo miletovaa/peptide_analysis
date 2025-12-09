@@ -4,7 +4,7 @@ parameters:
 
 data:
   # Input file name containing proteomics data
-  file_name_proteomics_input: "250930_PD_and_RBD_cohort_report.xlsx"
+  file_name_input: "250930_PD_and_RBD_cohort_report.xlsx"
 
 preprocessing:
   # Threshold for zero values (Default: 60%)

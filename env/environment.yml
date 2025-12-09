@@ -19,4 +19,5 @@ dependencies:
   - scikit-learn
   - openpyxl
   - nbformat
+  - python-kaleido
 prefix: /opt/anaconda3/envs/proteomics_analysis
